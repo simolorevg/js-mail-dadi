@@ -12,6 +12,12 @@
     align-items: center;
 }
 /*LAYOUT*/
+body{
+    font-family: 'Tilt Warp', cursive;
+}
+h2{
+    font-size: 3em;
+}
 .players-choices{
     width: 100%;
     height: 50vh;
@@ -35,6 +41,9 @@
 }
 .result{
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: green;
     color: white;
 }

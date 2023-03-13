@@ -11,4 +11,6 @@ if( cpuPlayer === userPlayer){
     message = "UTENTE VINCE!!!!";
 }
 console.log(userPlayer, cpuPlayer);
-console.log(message);
+document.getElementById('cpu-choice').innerHTML = cpuPlayer;
+document.getElementById('user-choice').innerHTML = userPlayer;
+document.getElementById('answer').innerHTML = message;
