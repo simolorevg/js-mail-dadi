@@ -1,3 +1,7 @@
+const error = document.getElementById('error');
+const success = document.getElementById('success');
+success.classList.add("none");
+error.classList.add("none");
 //UTENTE INSERISCE LA MAIL
 const submitButton = document.getElementById('submit-btn');
 const userMailInput = document.getElementById('mail');
@@ -10,6 +14,7 @@ answer.classList.add(customStyle);
 submitButton.addEventListener("click", function(){
    //PRENDO IL VALORE DI userMailInput
    const userMail = userMailInput.value;
+   let checkMail;
    //CERCO LA MAIL NELL'ARRAY
    for(let i = 0; i < mailArray.length; i++){
     //SE LA TROVO ASSEGNO A MESSAGE ACCESSO CONSENTITO
@@ -17,6 +22,11 @@ submitButton.addEventListener("click", function(){
         message = "Accesso Consentito";
         customStyle = "success-color";
         answer.classList.add(customStyle);
+        checkmail = true;
+    }
+    if(checkMail === true){
+        success.classList.remove("none");
+        success.classList.add("block");
     }
     //STAMPO SU SCHERMO IL RISULTATO
     answer.innerHTML = message;

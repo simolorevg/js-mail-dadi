@@ -10,26 +10,39 @@
     justify-content: center;
     align-items: center;
 }
+.flexcolcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*display*/
 .none{
     display: none;
 }
 .block{
-    display: block;
+    display: inline-block;
 }
-/*LAYOUT*/
+/*COMMON*/
 body{
     font-family: 'Tilt Warp', cursive;
 }
 img{
     max-width: 200px;
 }
+img[alt="success"]{
+    max-width: 400px;
+}
 h1,
 h2{
     text-align: center;
 }
+/*LAYOUT*/
 .container{
     width: 100%;
+    margin-top: 50px;
+}
+.answer-section{
     margin-top: 50px;
 }
 #submit-btn{
