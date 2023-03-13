@@ -1,0 +1,44 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*flexbox*/
+.flexrwcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*display*/
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+/*LAYOUT*/
+body{
+    font-family: 'Tilt Warp', cursive;
+}
+img{
+    max-width: 200px;
+}
+h1,
+h2{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    margin-top: 50px;
+}
+#submit-btn{
+    padding: 5px;
+}
+/*color styles*/
+.error-color{
+    color: red;
+}
+.success-color{
+    color:green;
+}
